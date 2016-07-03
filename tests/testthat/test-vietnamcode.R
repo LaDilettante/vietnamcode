@@ -37,3 +37,8 @@ test_that("Search province name using regex", {
                            "province_name", "province_name"),
                rep("BRVT", 3))
 })
+
+test_that("Handles PCI code", {
+  expect_equal(vietnamcode(c("1", 2, "42"), "pci", "province_name"),
+               c("Ha Noi", "Hai Phong", "Ha Tay"))
+})

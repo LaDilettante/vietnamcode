@@ -55,6 +55,7 @@ vietnamcode <- function(sourcevar,
     destination_index <- match_table[match(sourcevar, match_table[["source"]]),
                                      "regex_index"]
   } else {
+
     destination_index <- match(sourcevar, vietnamcode::vietnamcode_data[[origin]])
   }
 

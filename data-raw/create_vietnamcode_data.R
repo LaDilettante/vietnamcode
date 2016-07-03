@@ -31,7 +31,8 @@ d_name <- read.csv("data-raw/regex.csv",
 vietnamcode_data <- full_join(d_census, d_name, by = "province_name") %>%
   full_join(d_pci, by = "province_name") %>%
   mutate(enterprise_census_c = formatC(enterprise_census,
-                                       width = 2, format = "d", flag = "0"))
+                                       width = 2, format = "d", flag = "0")) %>%
+  mutate_each(funs(as.character))
 
 Encoding(vietnamcode_data$province_name_diacritics) <- "UTF-8"
 class(vietnamcode_data) <- "data.frame"
