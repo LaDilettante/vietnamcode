@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/LaDilettante/vietnamcode.svg?branch=master)](https://travis-ci.org/LaDilettante/vietnamcode)
+
 # Usage
 
 Use the main function `vietnamcode` to convert Vietnam's provinces' names and ID across different formats. The function can handle diacritics and various spellings.
