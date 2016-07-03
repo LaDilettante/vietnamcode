@@ -2,7 +2,7 @@ library(haven)
 library(plyr)
 library(dplyr)
 
-d_census <- read_dta("data/province_codes.dta")
+d_census <- read_dta("data-raw/province_codes.dta")
 d_census <- d_census %>% arrange(province) %>%
   select(province_name = province,
          enterprise_census = tinh_no,
@@ -25,12 +25,16 @@ d_pci = data.frame(pci = attr(d_pci$pci, "labels")) %>%
                                    "TT-Hue" = "Thua Thien Hue"))) %>%
   rbind(c(42, "Ha Tay")) # According to PCI2005
 
-d_name <- read.csv("data-raw/regex.csv", stringsAsFactors = FALSE)
+d_name <- read.csv("data-raw/regex.csv",
+                   fileEncoding = "UTF-8", stringsAsFactors = FALSE)
 
 vietnamcode_data <- full_join(d_census, d_name, by = "province_name") %>%
   full_join(d_pci, by = "province_name") %>%
   mutate(enterprise_census_c = formatC(enterprise_census,
                                        width = 2, format = "d", flag = "0"))
+
+Encoding(vietnamcode_data$province_name_diacritics) <- "UTF-8"
+class(vietnamcode_data) <- "data.frame"
 
 write.csv(vietnamcode_data, file = "data/vietnamcode_data.csv",
           row.names = FALSE)

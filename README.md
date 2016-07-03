@@ -1,2 +1,0 @@
-# vietnamcode
-Vietnam province code

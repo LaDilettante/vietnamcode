@@ -1,10 +1,15 @@
 Package: vietnamcode
+Encoding: UTF-8
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Convert Vietnam Provincial Codes
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Authors@R: person("Anh", "Le", email = "anh.le@duke.edu", role = c("aut", "cre"))
+Maintainer: Anh Le <anh.le@duke.edu>
+Description: Converts Vietnam's provinces' names and ID
+    across different formats. Handles diacritics and different spellings.
+    Inspired by the countrycode package.
+Depends: R (>= 3.1.0)
+License: GPL-3
 LazyData: TRUE
 RoxygenNote: 5.0.1
+Suggests: testthat
