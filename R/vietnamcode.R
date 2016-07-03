@@ -1,4 +1,4 @@
-#' Convert Vietnam province ID
+#' Convert Vietnam provincial ID
 #'
 #' Converts Vietnam's provinces' names and ID across different formats. Handles
 #' diacritics and different spellings.
