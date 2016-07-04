@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/LaDilettante/vietnamcode.svg?branch=master)](https://travis-ci.org/LaDilettante/vietnamcode)
 [![codecov](https://codecov.io/gh/LaDilettante/vietnamcode/branch/master/graph/badge.svg)](https://codecov.io/gh/LaDilettante/vietnamcode)
+[![CRAN](http://www.r-pkg.org/badges/version/vietnamcode)](http://www.r-pkg.org/badges/version/vietnamcode)
 
 # Usage
 
