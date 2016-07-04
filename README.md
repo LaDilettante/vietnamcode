@@ -16,5 +16,6 @@ vietnamcode::vietnamcode(source, "province_name", "enterprise_census")
 # Installation
 
 ```
+install.packages("vietnamcode") # Or
 devtools::install_github("LaDilettante/vietnamcode")
 ```
