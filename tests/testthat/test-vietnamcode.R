@@ -1,8 +1,8 @@
-library(vietnamcode)
 context("Province name conversion")
 
 test_that("Edge case for number of strings", {
-  expect_equal(vietnamcode(c("Đà Nẵng"), "province_name", "province_name"), "Da Nang")
+  expect_equal(vietnamcode(c("\u00d0\u00e0 N\u1eb5ng"), "province_name", "province_name"),
+               "Da Nang")
 })
 
 test_that("Returns non-match as NA", {
@@ -18,9 +18,9 @@ test_that("Handles null argument", {
 })
 
 test_that("Handles province name with diacritics", {
-  expect_equal(vietnamcode(c("Đà Nẵng"), "province_name", "province_name"),
+  expect_equal(vietnamcode(c("\u00d0\u00e0 N\u1eb5ng"), "province_name", "province_name"),
               c("Da Nang"))
-  expect_equal(vietnamcode(c("Bắc Kạn", "Sóc Trăng"), "province_name", "province_name"),
+  expect_equal(vietnamcode(c("B\u1eafc K\u1ea1n", "S\u00f3c Trang" ), "province_name", "province_name"),
                c("Bac Kan", "Soc Trang"))
 })
 

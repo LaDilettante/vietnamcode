@@ -2,7 +2,7 @@ Package: vietnamcode
 Encoding: UTF-8
 Type: Package
 Title: Convert Vietnam Provincial Codes
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: person("Anh", "Le", email = "anh.le@duke.edu", role = c("aut", "cre"))
 Maintainer: Anh Le <anh.le@duke.edu>
 Description: Converts Vietnam's provinces' names and ID

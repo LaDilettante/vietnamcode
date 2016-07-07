@@ -18,7 +18,7 @@ convert_unicode_to_ascii <- function(string) {
                 "\u1ED8\u1ED9\u1EDA\u1EDB\u1EDC\u1EDD\u1EDE\u1EDF\u1EE0\u1EE1",
                 "\u1EE2\u1EE3\u1EE4\u1EE5\u1EE6\u1EE7\u1EE8\u1EE9\u1EEA\u1EEB",
                 "\u1EEC\u1EED\u1EEE\u1EEF\u1EF0\u1EF1\u1EF2\u1EF3\u1EF4\u1EF5",
-                "\u1EF6\u1EF7\u1EF8\u1EF9")
+                "\u1EF6\u1EF7\u1EF8\u1EF9\u00d0")
   new <- paste0("AAAAEEEIIO",
                 "OOOUUYaaaa",
                 "eeeiioooou",
@@ -32,6 +32,6 @@ convert_unicode_to_ascii <- function(string) {
                 "OoOoOoOoOo",
                 "OoUuUuUuUu",
                 "UuUuUuYyYy",
-                "YyYy")
+                "YyYyD")
   return(chartr(old, new, string))
 }
