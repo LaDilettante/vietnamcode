@@ -2,7 +2,7 @@
 % Please edit documentation in R/vietnamcode.R
 \name{vietnamcode}
 \alias{vietnamcode}
-\title{Convert Vietnam province ID}
+\title{Convert Vietnam provincial ID}
 \usage{
 vietnamcode(sourcevar, origin = c("province_name", "enterprise_census",
   "enterprise_census_old", "enterprise_census_c", "pci"),
