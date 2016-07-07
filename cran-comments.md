@@ -1,9 +1,9 @@
 ## Resubmission
-This is a resubmission. In this version I have:
+This is a resubmission to fix a failure to build across OSes on CRAN. In this version I have:
 
-* Write a OS-portable function to convert Unicode to ASCII instead of relying on `iconv(s, to="ASCII//TRANSLIT")`
-* Test in a local Windows 10 and a local OS X environment
-* Bump version to 0.1.1
+* Written a OS-portable function to convert Unicode to ASCII instead of relying on `iconv(s, to="ASCII//TRANSLIT")`
+* Tested in a local Windows 10 and a local OS X environment
+* Bumped version to 0.1.1
 
 ## Test environments
 * local ubuntu 14.04.4, R 3.3.1
