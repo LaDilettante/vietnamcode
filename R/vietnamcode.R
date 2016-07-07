@@ -35,11 +35,8 @@ vietnamcode <- function(sourcevar,
 
   # Sanitize province name to lower case and ASCII
   if (origin %in% c("province_name")) {
-    sourcevar <- tolower(sourcevar)
-    sourcevar <- chartr("\u0111", "d", sourcevar) # Replace VNese d
-    sourcevar <- iconv(sourcevar, to = "ASCII//TRANSLIT")
+    sourcevar <- tolower(convert_unicode_to_ascii(sourcevar))
 
-    # browser()
     # Multiple regex search
     tmp <- sapply(stats::na.omit(vietnamcode::vietnamcode_data[["regex"]]), grepl,
            unique(sourcevar), ignore.case = TRUE, perl = TRUE)
@@ -55,15 +52,8 @@ vietnamcode <- function(sourcevar,
     destination_index <- match_table[match(sourcevar, match_table[["source"]]),
                                      "regex_index"]
   } else {
-
     destination_index <- match(sourcevar, vietnamcode::vietnamcode_data[[origin]])
   }
 
   return(vietnamcode::vietnamcode_data[destination_index, destination])
-}
-
-which_or_NA <- function(v) {
-  ind <- which(v)
-  if (length(ind) == 0) {ind <- NA_integer_}
-  return(ind)
 }
