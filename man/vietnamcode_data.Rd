@@ -10,6 +10,7 @@
   \item{province_name}{province name}
   \item{province_name}{province name with diacritics}
   \item{pci}{used by the Provincial Competitiveness Index}
+  \item{papi}{used by the Provincial Governance and Public Administration Performance Index}
   \item{enterprise_census}{used by the General Statistics Office (GSO) for the Enterprise Census}
   \item{enterprise_census_old}{old GSO code}
   \item{enterprise_census_c}{GSO code as character}

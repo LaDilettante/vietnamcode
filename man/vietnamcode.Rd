@@ -5,7 +5,7 @@
 \title{Convert Vietnam provincial ID}
 \usage{
 vietnamcode(sourcevar, origin = c("province_name", "enterprise_census",
-  "enterprise_census_old", "enterprise_census_c", "pci"),
+  "enterprise_census_old", "enterprise_census_c", "pci", "papi"),
   destination = c("province_name", "province_name_diacritics",
   "enterprise_census", "enterprise_census_old", "enterprise_census_c", "pci",
   "papi"))
@@ -31,6 +31,7 @@ Supports the following coding schemes:
  \item{province_name_diacritics}
  \item{enterprise_censusm enterprise_census_old, enterprise_census_c: }{the same as GSO code}
  \item{pci: }{Provincial Competitiveness Index}
+ \item{papi: }{Provincial Governance and Public Administration Performance Index}
 }
 }
 \examples{

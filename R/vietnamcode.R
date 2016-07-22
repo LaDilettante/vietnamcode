@@ -16,7 +16,8 @@
 #' \itemize{
 #'  \item{province_name}
 #'  \item{province_name_diacritics}
-#'  \item{enterprise_censusm enterprise_census_old, enterprise_census_c: }{the same as GSO code}
+#'  \item{enterprise_census, enterprise_census_old, enterprise_census_c: }{Enterprise Census survey.
+#'  Also known as GSO code. enterprise_census_c are codes as strings with leading 0}
 #'  \item{pci: }{Provincial Competitiveness Index}
 #'  \item{papi: }{Provincial Governance and Public Administration Performance Index}
 #' }
