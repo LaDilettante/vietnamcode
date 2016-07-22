@@ -4,8 +4,12 @@
 #' diacritics and different spellings.
 #'
 #' @param sourcevar Character vector that contains the codes or province names to be converted
-#' @param origin String that indicates the coding scheme of origin
-#' @param destination String that indicates the coding scheme of destination
+#' @param origin String that indicates the coding scheme of origin, i.e. "province_name",
+#' "enterprise_census", "enterprise_census_old", "enterprise_census_c", "pci", "papi"
+#'
+#' @param destination String that indicates the coding scheme of destination, i.e. "province_name", "province_name_diacritics",
+#' "enterprise_census", "enterprise_census_old", "enterprise_census_c",
+#' "pci", "papi"
 #'
 #' @keywords vietnamcode
 #' @note Supports the following coding schemes:
@@ -14,6 +18,7 @@
 #'  \item{province_name_diacritics}
 #'  \item{enterprise_censusm enterprise_census_old, enterprise_census_c: }{the same as GSO code}
 #'  \item{pci: }{Provincial Competitiveness Index}
+#'  \item{papi: }{Provincial Governance and Public Administration Performance Index}
 #' }
 #'
 #' @export
@@ -23,10 +28,10 @@
 vietnamcode <- function(sourcevar,
   origin = c("province_name",
              "enterprise_census", "enterprise_census_old", "enterprise_census_c",
-             "pci"),
+             "pci", "papi"),
   destination = c("province_name", "province_name_diacritics",
                 "enterprise_census", "enterprise_census_old", "enterprise_census_c",
-                "pci")) {
+                "pci", "papi")) {
   if (is.null(sourcevar))
     stop("sourcevar cannot be NULL")
 

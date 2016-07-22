@@ -42,3 +42,8 @@ test_that("Handles PCI code", {
   expect_equal(vietnamcode(c("1", 2, "42"), "pci", "province_name"),
                c("Ha Noi", "Hai Phong", "Ha Tay"))
 })
+
+test_that("Handles PAPI code", {
+  expect_equal(vietnamcode(c(19, "38", 60), "papi", "province_name"),
+               c("Thai Nguyen", "Thanh Hoa", "Binh Thuan"))
+})

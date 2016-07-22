@@ -7,14 +7,18 @@
 vietnamcode(sourcevar, origin = c("province_name", "enterprise_census",
   "enterprise_census_old", "enterprise_census_c", "pci"),
   destination = c("province_name", "province_name_diacritics",
-  "enterprise_census", "enterprise_census_old", "enterprise_census_c", "pci"))
+  "enterprise_census", "enterprise_census_old", "enterprise_census_c", "pci",
+  "papi"))
 }
 \arguments{
 \item{sourcevar}{Character vector that contains the codes or province names to be converted}
 
-\item{origin}{String that indicates the coding scheme of origin}
+\item{origin}{String that indicates the coding scheme of origin, i.e. "province_name",
+"enterprise_census", "enterprise_census_old", "enterprise_census_c", "pci", "papi"}
 
-\item{destination}{String that indicates the coding scheme of destination}
+\item{destination}{String that indicates the coding scheme of destination, i.e. "province_name", "province_name_diacritics",
+"enterprise_census", "enterprise_census_old", "enterprise_census_c",
+"pci", "papi"}
 }
 \description{
 Converts Vietnam's provinces' names and ID across different formats. Handles
