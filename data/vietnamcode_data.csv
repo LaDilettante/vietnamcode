@@ -1,4 +1,4 @@
-"province_name","province_name_proper","enterprise_census","enterprise_census_old","province_name_diacritics","regex","pci","papi","enterprise_census_c"
+"province_name","province_name_full","enterprise_census","enterprise_census_old","province_name_diacritics","regex","pci","papi","enterprise_census_c"
 "An Giang","An Giang","89","805","An Giang","An Giang","18","89","89"
 "Bac Kan","Bac Kan","6","207","Bắc Kạn","Bac [CK]an","54","6","06"
 "Bac Giang","Bac Giang","24","221","Bắc Giang","Bac Giang","55","24","24"
