@@ -7,7 +7,8 @@
 #' @param origin String that indicates the coding scheme of origin, i.e. "province_name",
 #' "enterprise_census", "enterprise_census_old", "enterprise_census_c", "pci", "papi"
 #'
-#' @param destination String that indicates the coding scheme of destination, i.e. "province_name", "province_name_diacritics",
+#' @param destination String that indicates the coding scheme of destination, i.e.
+#' "province_name", "province_name_full", "province_name_diacritics",
 #' "enterprise_census", "enterprise_census_old", "enterprise_census_c",
 #' "pci", "papi"
 #'
