@@ -31,7 +31,7 @@ vietnamcode <- function(sourcevar,
   origin = c("province_name",
              "enterprise_census", "enterprise_census_old", "enterprise_census_c",
              "pci", "papi"),
-  destination = c("province_name", "province_name_diacritics",
+  destination = c("province_name", "province_name_diacritics", "province_name_full",
                 "enterprise_census", "enterprise_census_old", "enterprise_census_c",
                 "pci", "papi")) {
   if (is.null(sourcevar))
